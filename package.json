@@ -1,71 +1,29 @@
-{  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+{
+  "name": "autotakes-beta",
+  "version": "1.0.0",
+  "description": "automatical multiple takeprofits for trading crypto on binance!",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "itwoshenka"
+  },
+  "keywords": [
+    "crypto",
+    "trading",
+    "script"
+  ],
+  "author": "itwoshenka",
   "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
   "dependencies": {
     "axios": "^0.27.2",
-    "ccxt": "^1.92.52",
+    "ccxt": "^1.92.65",
     "dotenv": "^16.0.1"
-  },
-  "id": "exchange",                 
-  "name": "autotakes",                   
-  "countries": [ "US", "CN", "EU" ],   
-  "urls": {
-      "api": "https://api.example.com/data",  
-      "www": "https://www.example.com",        
-      "doc": "https://docs.example.com/api"
-  },
-  "version":         "v1",             
-  "api":             { ... },          
-  "has": {                             
-      "CORS": false,
-      "publicAPI": true,
-      "privateAPI": true,
-      "cancelOrder": true,
-      "createDepositAddress": false,
-      "createOrder": true,
-      "fetchBalance": true,
-      "fetchCanceledOrders": false,
-      "fetchClosedOrder": false,
-      "fetchClosedOrders": false,
-      "fetchCurrencies": false,
-      "fetchDepositAddress": false,
-      "fetchMarkets": true,
-      "fetchMyTrades": false,
-      "fetchOHLCV": false,
-      "fetchOpenOrder": false,
-      "fetchOpenOrders": false,
-      "fetchOrder": false,
-      "fetchOrderBook": true,
-      "fetchOrders": false,
-      "fetchStatus": "emulated",
-      "fetchTicker": true,
-      "fetchTickers": false,
-      "fetchBidsAsks": false,
-      "fetchTrades": true,
-      "withdraw": false
-  },
-  "timeframes": {                      
-      "1m": "1minute",
-      "1h": "1hour",
-      "1d": "1day",
-      "1M": "1month",
-      "1y": "1year"
-  },
-  "timeout":           10000,          
-  "rateLimit":         2000,           
-  "userAgent":        "ccxt/1.1.1 ...",
-  "verbose":           false,          
-  "markets":          { ... },          
-  "symbols":          [ ... ],          
-  "currencies":       { ... },          
-  "markets_by_id":    { ... },         
-  "currencies_by_id": { ... },         
-  "apiKey":   "92560ffae9b8a0421...",  
-  "secret":   "9aHjPmW+EtRRKN/Oi...", 
-  "password": "6kszf4aci8r",           
-  "uid":      "123456",                
-  "options":          { ... }         
+  }
 }

@@ -1,15 +1,16 @@
-require('dotenv').config;
+require('dotenv').config();
+import "C:/Users/nomen/OneDrive/Рабочий стол/autotakes beta/package.json";
+import "C:/Users/nomen/OneDrive/Рабочий стол/autotakes beta/config.json";
 const ccxt = require('ccxt');
-console.log (ccxt.exchanges);
 const axios = require('axios');
-
+const apiKey2 = document.getElementById(apiKey)
+const form = document.getElementById('apiKeysForm')
 const exchangeId = 'binance'
     , exchangeClass = ccxt[exchangeId]
     , exchange = new exchangeClass ({
-        'apiKey': config.apiKey,
+        'apiKey': req.query.apiKey,
         'secret': config.secret,
     });
-
     const exchange_data = new ccxt.binance ({
         'rateLimit': 10000, 
         'headers': {
@@ -36,7 +37,7 @@ const tick = async() => {
     ]);
     const marketPrice = results[0].data.bitcoin.usd / results[1].data.tether.usd;
 };  
-    const sellPrice1 = marketPrice * (1 + 1.01);
+    const sellPrice1 = marketPrice * (1 + document.getElementById(takeProfit1percent1));
     const sellPrice2 = marketPrice * (1 + 1.02);
     const buyPrice1 = marketPrice * (1 + 1.01);
     const buyPrice2 =marketPrice * (1+ 1.02);

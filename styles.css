@@ -1,0 +1,10 @@
+.tradePair1{
+    position: relative;
+    margin-top: 10px;
+    display: flexbox;
+    flex-direction: column;
+}
+.tradePairs{
+    display: flexbox;
+    flex-direction: column;
+}
